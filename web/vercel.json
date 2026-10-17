@@ -1,0 +1,202 @@
+{
+  "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "redirects": [
+    {
+      "source": "/index.aspx",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/Index.aspx",
+      "destination": "/",
+      "permanent": true
+    },
+    {
+      "source": "/about.aspx",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/About.aspx",
+      "destination": "/about",
+      "permanent": true
+    },
+    {
+      "source": "/history.aspx",
+      "destination": "/history",
+      "permanent": true
+    },
+    {
+      "source": "/History.aspx",
+      "destination": "/history",
+      "permanent": true
+    },
+    {
+      "source": "/foundersmessage.aspx",
+      "destination": "/founders-message",
+      "permanent": true
+    },
+    {
+      "source": "/Foundersmessage.aspx",
+      "destination": "/founders-message",
+      "permanent": true
+    },
+    {
+      "source": "/bobsmantra.aspx",
+      "destination": "/bobs-mantra",
+      "permanent": true
+    },
+    {
+      "source": "/Bobsmantra.aspx",
+      "destination": "/bobs-mantra",
+      "permanent": true
+    },
+    {
+      "source": "/equipments.aspx",
+      "destination": "/equipment",
+      "permanent": true
+    },
+    {
+      "source": "/Equipments.aspx",
+      "destination": "/equipment",
+      "permanent": true
+    },
+    {
+      "source": "/aerobics.aspx",
+      "destination": "/aerobics",
+      "permanent": true
+    },
+    {
+      "source": "/Aerobics.aspx",
+      "destination": "/aerobics",
+      "permanent": true
+    },
+    {
+      "source": "/yoga.aspx",
+      "destination": "/yoga",
+      "permanent": true
+    },
+    {
+      "source": "/Yoga.aspx",
+      "destination": "/yoga",
+      "permanent": true
+    },
+    {
+      "source": "/healthbar.aspx",
+      "destination": "/health-bar",
+      "permanent": true
+    },
+    {
+      "source": "/Healthbar.aspx",
+      "destination": "/health-bar",
+      "permanent": true
+    },
+    {
+      "source": "/massageandspa.aspx",
+      "destination": "/massage-spa",
+      "permanent": true
+    },
+    {
+      "source": "/Massageandspa.aspx",
+      "destination": "/massage-spa",
+      "permanent": true
+    },
+    {
+      "source": "/bmicalculetor.aspx",
+      "destination": "/bmi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/Bmicalculetor.aspx",
+      "destination": "/bmi-calculator",
+      "permanent": true
+    },
+    {
+      "source": "/member.aspx",
+      "destination": "/membership",
+      "permanent": true
+    },
+    {
+      "source": "/Member.aspx",
+      "destination": "/membership",
+      "permanent": true
+    },
+    {
+      "source": "/carrier.aspx",
+      "destination": "/careers",
+      "permanent": true
+    },
+    {
+      "source": "/Carrier.aspx",
+      "destination": "/careers",
+      "permanent": true
+    },
+    {
+      "source": "/gallery.aspx",
+      "destination": "/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/Gallery.aspx",
+      "destination": "/gallery",
+      "permanent": true
+    },
+    {
+      "source": "/momentsofgallery.aspx",
+      "destination": "/moments-of-glory",
+      "permanent": true
+    },
+    {
+      "source": "/Momentsofgallery.aspx",
+      "destination": "/moments-of-glory",
+      "permanent": true
+    },
+    {
+      "source": "/packages.aspx",
+      "destination": "/packages",
+      "permanent": true
+    },
+    {
+      "source": "/Packages.aspx",
+      "destination": "/packages",
+      "permanent": true
+    },
+    {
+      "source": "/contact.aspx",
+      "destination": "/contact",
+      "permanent": true
+    },
+    {
+      "source": "/Contact.aspx",
+      "destination": "/contact",
+      "permanent": true
+    }
+  ],
+  "rewrites": [
+    {
+      "source": "/((?!assets/|optimized/|gymphotos/|images/).*)",
+      "destination": "/index.html"
+    }
+  ],
+  "headers": [
+    {
+      "source": "/assets/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=31536000, immutable"
+        }
+      ]
+    },
+    {
+      "source": "/optimized/(.*)",
+      "headers": [
+        {
+          "key": "Cache-Control",
+          "value": "public, max-age=2592000"
+        }
+      ]
+    }
+  ]
+}
